@@ -1,4 +1,3 @@
----
 aliases:
     repos: |
         !gh api --paginate graphql -f owner="$1" -f query='

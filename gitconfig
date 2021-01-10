@@ -1,0 +1,13 @@
+[user]
+	email = hans@dailystuff.nl
+	name = Hans Spaans
+[alias]
+	changelog = log --no-merges --pretty=format:"-\\ %s"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[commit]
+	gpgsign = false
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+[credential]
+	helper = store

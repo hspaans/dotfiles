@@ -16,3 +16,12 @@ $ mkrc .bash_profile .bash_logout
 $ mkrc -d .dotfiles .bash_profile .bash_logout
 ...
 ```
+
+## Gitignore
+
+https://github.com/github/gitignore
+
+## Gitattributes
+
+https://github.com/gitattributes/gitattributes
+

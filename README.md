@@ -19,9 +19,12 @@ $ mkrc -d .dotfiles .bash_profile .bash_logout
 
 ## Gitignore
 
-https://github.com/github/gitignore
+[gitignore][gitignore]
 
 ## Gitattributes
 
-https://github.com/gitattributes/gitattributes
+[gitattributes][gitattributes]
 
+[gitignore]: https://github.com/github/gitignore
+[gitignore-global]: https://github.com/github/gitignore/tree/master/Global
+[gitattributes]: https://github.com/gitattributes/gitattributes

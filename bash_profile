@@ -17,5 +17,3 @@ export PATH=$PATH:$GOPATH/bin
 # https://github.com/pypa/pipenv/issues/259
 #export PIPENV_VENV_IN_PROJECT=1
 
-[[ `which gh` ]] && eval "$(gh completion -s bash)"
-

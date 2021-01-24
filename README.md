@@ -25,6 +25,8 @@ $ mkrc -d .dotfiles .bash_profile .bash_logout
 
 [gitattributes][gitattributes]
 
+[gitattributes]: https://github.com/gitattributes/gitattributes
 [gitignore]: https://github.com/github/gitignore
 [gitignore-global]: https://github.com/github/gitignore/tree/master/Global
-[gitattributes]: https://github.com/gitattributes/gitattributes
+[githubcli-install]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+

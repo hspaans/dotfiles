@@ -7,7 +7,7 @@ if which rcup >/dev/null; then
         if [ ! -f ~/.rcrc ]; then
             cp ~/dotfiles/rcrc ~/.rcrc
         fi
-        rcup -C -v
+        rcup -C -f -v
     else
         if [ ! -f ~/.rcrc ]; then
             ln -s ~/dotfiles/rcrc ~/.rcrc

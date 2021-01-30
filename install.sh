@@ -6,6 +6,10 @@ if which rcup >/dev/null; then
     if [ ! -f ~/.rcrc ]; then
         ln -s ~/dotfiles/rcrc ~/.rcrc
     fi
-    rcup -v
+    if [ -f /.dockerenv ]; then
+        rcup -C -v
+    else
+        rcup -v
+    fi
 fi
 

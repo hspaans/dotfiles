@@ -6,10 +6,13 @@ if [ -f /etc/bashrc ]; then
 fi
 
 ##
-# Section: systemd
+# Section: environment variables
 #
+
+# Set EDITOR
+[[ -e /usr/bin/vi ]] && export EDITOR=/usr/bin/vi
+
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
-#
 export SYSTEMD_PAGER=
 
 ##

@@ -42,3 +42,8 @@ export PS1="\u@\h \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 #
 [[ `which aws_completer` ]] && complete -C `which aws_completer` aws
 
+#
+# Source completion for package installer for Python
+#
+[[ `which pip` ]] && eval "`pip completion --bash`"
+

@@ -1,8 +1,4 @@
 {
-    "go.vetFlags": [
-        "-all",
-        "-tests"
-    ],
     "latex-workshop.message.update.show": false,
     "vs-kubernetes": {
         "vs-kubernetes.helm-path": "${env:HOME}/.vs-kubernetes/tools/helm/linux-amd64/helm",
@@ -10,43 +6,24 @@
         "vs-kubernetes.minikube-path": "${env:HOME}/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
         "vs-kubernetes.minikube-path.linux": "${env:HOME}/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
     },
-    "python.linting.pylintPath": "/usr/bin/pylint",
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
     "workbench.statusBar.feedback.visible": false,
     "explorer.confirmDelete": false,
     "search.showLineNumbers": true,
-    "python.linting.banditEnabled": true,
     "terminal.integrated.rendererType": "dom",
     "latex-workshop.view.pdf.viewer": "external",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "explorer.confirmDragAndDrop": false,
-    "markdownlint.customRules": [
-        "{docsmsft.docs-markdown}/markdownlint-custom-rules/rules.js"
-    ],
-    "python.jediEnabled": false,
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.pycodestylePath": "flake8",
-    "python.formatting.provider": "autopep8",
     "editor.minimap.enabled": false,
-    "intelephense.phpdoc.useFullyQualifiedNames": true,
     "editor.suggestSelection": "first",
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
         "strings": true
     },
-    "python.autoComplete.addBrackets": true,
-    "phpcs.executablePath": "./vendor/bin/phpcs",
-    "phpcs.showSources": true,
-    "go.useLanguageServer": true,
     "editor.renderControlCharacters": true,
     "vsonline.accountProvider": "GitHub",
     "editor.mouseWheelZoom": true,
     "vsonline.enableSuspendOnIdleConnection": false,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
     "window.titleBarStyle": "custom",
     "git.confirmSync": false,
     "git.fetchOnPull": true,
@@ -55,15 +32,16 @@
     "codespaces.accountProvider": "GitHub",
     "codespaces.enableSuspendOnIdleConnection": false,
     "workbench.colorTheme": "Default Dark+",
-    "python.languageServer": "Pylance",
+    "editor.renderWhitespace": "all",
+    "redhat.telemetry.enabled": false,
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
         }
     ],
-    "editor.renderWhitespace": "all",
-    "python.analysis.completeFunctionParens": true,
-    "dotfiles.repository": "https://github.com/hspaans/dotfiles",
-    "redhat.telemetry.enabled": false
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "dotfiles.installCommand": "install.sh",
+    "dotfiles.repository": "hspaans/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles"
 }

@@ -1,47 +1,23 @@
 {
-    "latex-workshop.message.update.show": false,
-    "vs-kubernetes": {
-        "vs-kubernetes.helm-path": "${env:HOME}/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.draft-path": "${env:HOME}/.vs-kubernetes/tools/draft/linux-amd64/draft",
-        "vs-kubernetes.minikube-path": "${env:HOME}/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-        "vs-kubernetes.minikube-path.linux": "${env:HOME}/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
-    "workbench.statusBar.feedback.visible": false,
-    "explorer.confirmDelete": false,
-    "search.showLineNumbers": true,
-    "terminal.integrated.rendererType": "dom",
-    "latex-workshop.view.pdf.viewer": "external",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDragAndDrop": false,
-    "editor.minimap.enabled": false,
+    "dotfiles.installCommand": "install.sh",
+    "dotfiles.repository": "hspaans/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles",
     "editor.suggestSelection": "first",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
-    },
     "editor.renderControlCharacters": true,
-    "vsonline.accountProvider": "GitHub",
-    "editor.mouseWheelZoom": true,
-    "vsonline.enableSuspendOnIdleConnection": false,
-    "window.titleBarStyle": "custom",
-    "git.confirmSync": false,
-    "git.fetchOnPull": true,
-    "git.autofetch": true,
-    "scm.alwaysShowRepositories": true,
-    "codespaces.accountProvider": "GitHub",
-    "codespaces.enableSuspendOnIdleConnection": false,
-    "workbench.colorTheme": "Default Dark+",
     "editor.renderWhitespace": "all",
-    "redhat.telemetry.enabled": false,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.editorAssociations": [
         {
-            "viewType": "jupyter.notebook.ipynb",
+            "viewType": "jupyter-notebook",
             "filenamePattern": "*.ipynb"
         }
     ],
-    "merge-conflict.autoNavigateNextConflict.enabled": true,
-    "dotfiles.installCommand": "install.sh",
-    "dotfiles.repository": "hspaans/dotfiles",
-    "dotfiles.targetPath": "~/dotfiles"
+    "workbench.statusBar.feedback.visible": false,
+    "python.languageServer": "Pylance",
+    "git.confirmSync": false,
+    "git.ignoreRebaseWarning": true,
+    "git.autofetch": true,
+    "githubPullRequests.fileListLayout": "tree",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

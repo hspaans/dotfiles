@@ -22,3 +22,12 @@ export PATH=$PATH:$GOPATH/bin
 # See https://github.com/pypa/pipenv/issues/259
 #export PIPENV_VENV_IN_PROJECT=1
 
+##
+# Section: DotNet
+#
+# The .NET SDK telemetry feature is enabled by default. To opt out of the
+# telemetry feature, set the DOTNET_CLI_TELEMETRY_OPTOUT environment variable
+# to 1 or true.
+# See https://docs.microsoft.com/nl-nl/dotnet/core/tools/telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+

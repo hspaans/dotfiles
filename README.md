@@ -17,9 +17,11 @@ $ mkrc -d .dotfiles .bash_profile .bash_logout
 ...
 ```
 
+See [installation manual][githubcli-install] for installing GitHub CLI.
+
 ## Gitignore
 
-[gitignore][gitignore]
+[gitignore][gitignore] can be set per project or directory, or also [global][gitignore-global]
 
 ## Gitattributes
 
@@ -29,4 +31,3 @@ $ mkrc -d .dotfiles .bash_profile .bash_logout
 [gitignore]: https://github.com/github/gitignore
 [gitignore-global]: https://github.com/github/gitignore/tree/master/Global
 [githubcli-install]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
-

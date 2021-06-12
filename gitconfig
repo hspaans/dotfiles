@@ -2,7 +2,7 @@
 	email = hans@dailystuff.nl
 	name = Hans Spaans
 [alias]
-	changelog = log --no-merges --pretty=format:"-\\ %s"
+	changelog = log --no-merges --pretty=format:"-\\ (%t)\\ %s"
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [commit]
 	gpgsign = false

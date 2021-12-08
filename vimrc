@@ -2,8 +2,6 @@ set nocompatible
 
 filetype indent plugin on
 
-syntax on
-
 set hidden
 set wildmenu
 set showcmd
@@ -27,4 +25,3 @@ set expandtab
 
 map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
-

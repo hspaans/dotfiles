@@ -1,6 +1,0 @@
-[
-    {
-        "key": "shift+alt+r",
-        "command": "workbench.action.tasks.runTask"
-    }
-]

@@ -6,11 +6,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 ##
-# Aliases
-#
-alias rgrep='grep -r'
-
-##
 # Section: environment variables
 #
 

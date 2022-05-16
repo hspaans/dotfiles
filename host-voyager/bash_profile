@@ -2,18 +2,8 @@
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+  . ~/.bashrc
 fi
-
-# User specific environment and startup programs
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
-##
-# Sectio: Golang
-#
-# See https://github.com/golang/go/wiki/SettingGOPATH
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
 
 ##
 # Section: Python

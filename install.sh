@@ -2,16 +2,8 @@
 
 set -e
 
-if [ -f ~/.rcrc ]; then
-    rm ~/.rcrc
-fi
+# Determine path of repository
+REPOPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-if [ -f ~/dotfiles/rcrc ]; then
-    ln -s ~/dotfiles/rcrc ~/.rcrc
-    rcup -d ~/dotfiles
-fi
-
-if [ -f ~/.dotfiles/rcrc ]; then
-    ln -s ~/.dotfiles/rcrc ~/.rcrc
-    rcup -d ~/.dotfiles
-fi
+# Check if the command exists
+[[ -x `which rcup` ]] && rcup -d "$REPOPATH" -x "README*.md LICENSE install.sh"

@@ -29,7 +29,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 ## Additional dotfiles
 
-* [editorconfig][editorconfig]
+* [EditorConfig][editorconfig]
 * [gitattributes][gitattributes]
 * [gitignore][gitignore] can be set per project or directory, or also [global][gitignore-global]
 

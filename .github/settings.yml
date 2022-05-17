@@ -1,6 +1,6 @@
 ---
 repository:
-  description: Dotfiles
+  description: My personal dotfiles
   topics: dotfiles, rcm
   delete_branch_on_merge: true
   has_wiki: false

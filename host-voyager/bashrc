@@ -2,27 +2,18 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
-
-# set PATH so it includes user's private XDG local bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-# set PATH so it includes user's private Golang bin if it exists
-if [ -d "$HOME/go" ] ; then
-  GOPATH="$HOME/go"
-  PATH="$GOPATH/bin:$PATH"
-fi
+export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
-export SYSTEMD_PAGER=
+#export SYSTEMD_PAGER=
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
@@ -34,43 +25,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 
 unset rc
-
-
-##
-# Section: environment variables
-#
-
-# Set EDITOR
-[[ -e /usr/bin/vi ]] && export EDITOR=/usr/bin/vi
-
-##
-# Section: Command-line
-#
-# User specific aliases and functions
-#
-
-# Get git-branch for current directory
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-# Select specific layout to show current git branch
-#export PS1="[\u@\h \[\033[32m\]\W]\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-export PS1="\u@\h \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-##
-# Section: BASH-completion
-#
-# Source completion for GitHub commandline client
-#
-[[ `which gh` ]] && eval "$(gh completion -s bash)"
-
-#
-# Source completion for AWS commandline client
-#
-[[ `which aws_completer` ]] && complete -C `which aws_completer` aws
-
-#
-# Source completion for package installer for Python
-#
-[[ `which pip` ]] && eval "`pip completion --bash`"

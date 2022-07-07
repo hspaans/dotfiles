@@ -1,3 +1,5 @@
+(
+
 ##                                                                              
 # Section: BASH-completion                                                      
 #                                                                               
@@ -14,4 +16,6 @@
 # Source completion for package installer for Python                            
 #                                                                               
 [[ $(which pip) ]] && eval "$(pip completion --bash)" 
+
+) 2> /dev/null
 

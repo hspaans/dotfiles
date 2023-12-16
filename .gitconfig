@@ -11,8 +11,9 @@
 [commit]
 	gpgsign = false
 [core]
-	editor = vim
 	autocrlf = input
+	editor = vim
+	excludesfile = ~/.gitignore
 [credential]
 	helper = store
 [init]

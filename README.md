@@ -1,37 +1,30 @@
 # dotfiles
 
-User-specific application configuration is traditionally stored in so called [dotfiles][dotfiles] and stored in the home directory. By moving these to a separate directory, you can keep your dotfiles out of your home directory and still have access to them. You can also maintain them in a git repository and use them in other situations like for GitHub Codespaces or VSCode devcontainers.
+User-specific application configuration is traditionally stored in so called [dotfiles][dotfiles] and stored in the home directory. By moving these to a separate directory, you can keep your dotfiles out of your home directory and still have access to them.
 
-GitHub Codespaces and VSCode devcontainers can use a plain git repository to retreive and install the dotfiles from in the container, but this way is incompatible with how dotfiles are handles by other tools like [RCM][rcm-repo]. By adding an installation script to the repository, you can use the same script to install the dotfiles in the container and on a host machine.
+You can also maintain them in a git repository and use them in other situations like for GitHub Codespaces or VSCode devcontainers. Both can use a plain git repository to retreive and install the dotfiles from in the container.
 
-## Installing and using RCM
+## Remarks for some dotfiles
 
-Installation of RCM is done by following the examples below or on [RCM][rcm-repo]. Using it is pretty straight forward and you can find the documentation [here][rcm-docs] or via `man rcm`.
+### .gitignore
 
-On Debian-based systems, run the following command:
+By default, the `$XDG_CONFIG_HOME/git/ignore` file is used as a global gitignore file but requires a script to be run to set it up with a separate command. When the separate command `install.sh` is being used then all other files have to be setup via the `install.sh` script as well.
 
-```shell
-sudo apt install rcm
+The alternative is to use the `~/.gitignore` file as a global gitignore file. This can be done by setting the `core.excludesfile` configuration option to the path of the `~/.gitignore` file with the command below to set it globally.
+
+```bash
+$ git config --global core.excludesfile ~/.gitignore
 ```
 
-On Red Hat-based systems, run the following command:
+### .gitconfig
 
-```shell
-sudo dnf install rcm
-```
+The `.gitconfig` file is used to configure git. And the `~/.gitconfig` file is updated in the final step by the GitHub Codespaces to set the user name and email address.
 
-For Debian-based devcontainer, add the following lines to the container file:
-
-```docker
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends rcm
-```
-
-## Additional dotfiles
+## Sources for dotfiles
 
 * [EditorConfig][editorconfig]
 * [gitattributes][gitattributes]
-* [gitignore][gitignore] can be set per project or directory, or also [global][gitignore-global]
+* [gitignore][gitignore] can be set per project or directory, or also [global][gitignore-global] as used here
 
 [dotfiles]: https://dotfiles.github.io/
 [editorconfig]: https://editorconfig.org/

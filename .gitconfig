@@ -13,8 +13,6 @@
 [core]
 	autocrlf = input
 	editor = vim
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
 [credential]
 	helper = store
 [init]

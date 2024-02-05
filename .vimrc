@@ -3,7 +3,7 @@ set encoding=utf-8
 
 filetype indent plugin on
 
-syntax on
+"syntax on
 filetype on
 
 set cc=80

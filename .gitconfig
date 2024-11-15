@@ -1,5 +1,5 @@
 [user]
-	email = hans@dailystuff.nl
+	email = 1072510+hspaans@users.noreply.github.com
 	name = Hans Spaans
 [alias]
 	changelog = log --no-merges --pretty=format:"-\\ (%t)\\ %s"

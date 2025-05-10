@@ -1,5 +1,8 @@
 # dotfiles
 
+> [!WARNING]
+> Use this repository on your own risk like other [dotfiles](https://github.com/topics/dotfiles) repositories.
+
 User-specific application configuration is traditionally stored in so called [dotfiles][dotfiles] and stored in the home directory. By moving these to a separate directory, you can keep your dotfiles out of your home directory and still have access to them.
 
 You can also maintain them in a git repository and use them in other situations like for GitHub Codespaces or VSCode devcontainers. Both can use a plain git repository to retreive and install the dotfiles from in the container.

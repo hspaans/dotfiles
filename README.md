@@ -4,6 +4,11 @@ User-specific application configuration is traditionally stored in so called [do
 
 You can also maintain them in a git repository and use them in other situations like for GitHub Codespaces or VSCode devcontainers. Both can use a plain git repository to retreive and install the dotfiles from in the container.
 
+## Aliases set in git
+
+- `changelog`: Generates a changelog
+- `undo`: Delete all commits not pushed to remote yes
+
 ## Remarks for some dotfiles
 
 ### .gitignore
@@ -15,6 +20,22 @@ The alternative is to use the `~/.gitignore` file as a global gitignore file. Th
 ```bash
 $ git config --global core.excludesfile ~/.gitignore
 ```
+
+> [!NOTE]
+> The configuration file has already been made in `~/.gitconfig` found in this repository.
+
+### .gitattributes
+
+By default, the `$XDG_CONFIG_HOME/git/attributes` file is used as a global gitattributes file but requires a script to be run to set it up with a separate command. When the separate command `install.sh` is being used then all other files have to be setup via the `install.sh` script as well.
+
+The alternative is to use the `~/.gitattributes` file as a global gitattributes file. This can be done by setting the `core.attributesfile` configuration option to the path of the `~/.gitattributes` file with the command below to set it globally.
+
+```bash
+$ git config --global core.attributesfile ~/.gitattributes
+```
+
+> [!NOTE]
+> The configuration file has already been made in `~/.gitconfig` found in this repository.
 
 ### .gitconfig
 

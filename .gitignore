@@ -66,3 +66,8 @@ tags
 # https://github.com/github/gitignore/blob/master/Global/VirtualEnv.gitignore
 .venv
 
+# Local
+.bash_history
+.python_history
+.sqlite_history
+

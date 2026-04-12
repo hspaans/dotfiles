@@ -1,10 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = 1072510+hspaans@users.noreply.github.com
 	name = Hans Spaans
 [alias]
 	changelog = log --no-merges --pretty=format:"-\\ (%t)\\ %s"
 	la = log --graph --pretty=format:'%C(yellow)%h%Creset%C(red)%d%Creset %s %Cgreen%an %Cblue(%cr)%Creset' --abbrev-commit --date=relative --all
-	lc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	lc = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	ln = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate

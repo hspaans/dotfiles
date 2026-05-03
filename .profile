@@ -25,3 +25,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Adding aliases
+alias python-venv-create="python -m venv .venv"
+alias python-venv-activate="source .venv/bin/activate"
+alias python-venv-deactivate="deactivate"

@@ -39,3 +39,5 @@
 	decorate = true
 [color]
 	ui = true
+[push]
+	autoSetupRemote = true

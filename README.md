@@ -18,6 +18,11 @@ repository to retreive and install the dotfiles from in the container.
 - `changelog`: Generates a changelog
 - `undo`: Delete all commits not pushed to remote yes
 
+## Aliases set in gh
+
+- `myissues`: Give an overview of issues assigned to me
+- `myprs`: Give an overview of pull requests assigned to me
+
 ## Remarks for some dotfiles
 
 ### .gitignore

@@ -10,8 +10,11 @@ prompt: enabled
 pager:
 # Aliases allow you to create nicknames for gh commands
 aliases:
-    co: pr checkout
-    install-skill-repo: skill install --agent github-copilot --scope project
+  co: pr checkout
+  install-skill-repo: skill install --agent github-copilot --scope project
+  search-my-tasks: search issues --assignee hspaans --include-prs --state open
+  myprs: search prs --assignee hspaans --state open
+  myissues: search issues --assignee hspaans --state open
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
 # What web browser gh should use when opening URLs. If blank, will refer to environment.
